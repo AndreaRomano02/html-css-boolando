@@ -28,6 +28,9 @@ header{
   position: fixed; */
 }
 
+h4{
+  text-transform: uppercase;
+}
 /*! main */
 .row{
   display: flex;
@@ -41,11 +44,16 @@ header{
   padding: 10px;
 }
 
+/* Cards */
 .card{
   height: 600px;
   position: relative;
 }
 
+.card:active{
+  opacity: 0.7;
+  cursor: pointer;
+}
 /* Img */
 .second-img{
   display: none;
@@ -70,6 +78,10 @@ header{
   right: 0;
 }
 
+.heart:hover{
+  color: red;
+  cursor: pointer;
+}
 /* Disocunt */
 .discount{
   color: #fff;
@@ -92,7 +104,7 @@ header{
 }
 
 /* Content */
-.content-price .discounted-price{
+.content-price .final-price{
   color: red;
   font-weight: bold;
 }
