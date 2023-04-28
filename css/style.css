@@ -8,7 +8,7 @@
 /* General */
 body{
   font-family: sans-serif;
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 .container{
@@ -71,7 +71,7 @@ header img{
   width: 150px;
 }
 
-header .icons{
+.header-icons{
   text-align: right;
 }
 /*! main */
@@ -154,6 +154,44 @@ header .icons{
   text-decoration: line-through;
 }
 
+/*! Footer */
+footer{
+  background-color: #1A1A1A;
+  color: white;
+  padding: 50px 0;
+}
+
+footer h5{
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.footer-menu{
+  gap: 10px;
+}
+
+.footer-menu>li:hover{
+  text-decoration: underline;
+}
+
+.footer-layout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-footer>div:first-child{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-icons{
+  font-size: 1.3rem;
+}
+
+.footer-icons>a{
+  padding-left: 5px;
+}
 /* * utilities */
 .border{
   border: 1px dashed black;
