@@ -8,9 +8,41 @@
 /* General */
 body{
   font-family: sans-serif;
+  /* padding-top: 100px; */
 }
 
 .container{
   width: 1200px;
   margin: 0 auto;
+}
+
+/* ! header */
+header{
+  background-color: #FF6900;
+  min-height: 100px;
+  /* width: 100%;
+  position: fixed; */
+}
+
+/*! main */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.column{
+  min-height: 600px;
+  flex-basis: calc(100% / 3);
+  padding: 20px;
+}
+
+.card{
+  min-height: 600px;
+}
+
+/* * utilities */
+.border{
+  border: 1px dashed black;
 }
