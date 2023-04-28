@@ -8,7 +8,7 @@
 /* General */
 body{
   font-family: sans-serif;
-  /* padding-top: 100px; */
+  padding: 100px 0;
 }
 
 .container{
@@ -16,20 +16,63 @@ body{
   margin: 0 auto;
 }
 
-img{
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
+main img{
   max-width: 100%;
+}
+
+h4{
+  text-transform: uppercase;
 }
 
 /* ! header */
 header{
   background-color: #FF6900;
-  min-height: 100px;
-  /* width: 100%;
-  position: fixed; */
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
-h4{
-  text-transform: uppercase;
+.header-layout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: #fff;
+}
+
+.header-menu{
+  gap: 10px;
+  font-weight: bold;
+}
+
+.header-menu li:hover{
+  text-decoration: underline;
+}
+
+header .logo{
+  align-items: center;
+  justify-content: center;
+}
+
+header img{
+  text-align: center;
+  width: 150px;
+}
+
+header .icons{
+  text-align: right;
 }
 /*! main */
 .row{
@@ -40,13 +83,11 @@ h4{
 }
 
 .column{
-  flex-basis: calc(100% / 3);
   padding: 10px;
 }
 
 /* Cards */
 .card{
-  height: 600px;
   position: relative;
 }
 
@@ -128,4 +169,8 @@ h4{
 
 .d-flex{
   display: flex;
+}
+
+.f-basis-3{
+  flex-basis: calc(100% / 3);
 }
