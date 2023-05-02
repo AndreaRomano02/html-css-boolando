@@ -98,13 +98,14 @@ header img{
 /* Img */
 .second-img{
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .card:hover .second-img{
   display: inline-block;
+}
+
+.card:hover .first-img{
+  display: none;
 }
 
 /* Heart */
@@ -196,7 +197,7 @@ footer h5{
 }
 
 .neg-align{
-  margin-left: -20px;
+  margin: 0 -20px;
 }
 
 .d-flex{
